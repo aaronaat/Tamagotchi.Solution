@@ -1,0 +1,19 @@
+@using Tamagotchi.Models;
+
+<img src="https://banner2.kisspng.com/20180615/ixg/kisspng-tamagotchi-connection-corner-shop-2-toy-5b2389bc192a51.4486568815290556761031.jpg">
+
+Food @Model.GetFeed()
+Play @Model.GetPlay()
+Sleep @Model.GetSleep()
+
+<form action="/tamagotchi/feed" method="post">
+  <button type="submit" name="button">Feed</button>
+</form>
+<br><br>
+<form action="/tamagotchi/play" method="post">
+  <button type="submit" name="button">Play</button>
+</form>
+<br><br>
+<form action="/tamagotchi/sleep" method="post">
+  <button type="submit" name="button">Sleep</button>
+</form>
